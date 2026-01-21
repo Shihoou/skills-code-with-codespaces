@@ -5,8 +5,7 @@
     "ghcr.io/stu-bell/devcontainer-features/python:0": {
       "apt_get": true,
       "installTools": true,
-      "min_python_version": true,
-      "postCreateCommand": "bash .devcontainer/postCreate.sh"
+      "min_python_version": true
     }
   },
   "customizations": {
@@ -16,5 +15,6 @@
         "ms-python.debugpy"
       ]
     }
-  }
+  },
+  "postCreateCommand": "bash .devcontainer/postCreate.sh"
 }
